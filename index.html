@@ -1,219 +1,204 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-	<head>
-		<title>	 Inverted-U Sales Effect of Agreeableness: <br> Modelling Attractiveness Using MMML
+<head>
+    <title> Inverted-U Sales Effect of Agreeableness: <br> Modelling Attractiveness Using MMML
 
-</title>
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<meta name="keywords" content="">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/uikit.min.css" />
-		<link rel="stylesheet" href="css/main.css" />
-		<script src="js/uikit.min.js"></script>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/uikit-icons.min.js"></script>
-        <script src="js/script.js"></script>
-
-
-<style>
+    </title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/script.js"></script>
 
 
-.nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-	margin-top: 60px;
-}
-.nav-link {
-    display: block;
-	text-align: center;
-    padding: 0.5rem 3rem;
-	color: #007bff;
-    text-decoration: none;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-.nav-link:hover{   
-	text-decoration: none;
-	 color: #0056b3;
-	}
-
-</style>
+    <style>
 
 
-		</head>
+        .nav {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            width: 100%;
+            justify-content: center;
+            margin-top: 60px;
+        }
 
-	<body oncontextmenu=self.event.returnValue=false>
+        .nav-link {
+            display: block;
+            text-align: center;
+            padding: 0.5rem 3rem;
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
 
-		<nav class="uk-navbar-container uk-margin" uk-navbar uk-sticky>
-		    <div class="uk-navbar-left">
-			        <a href="#offcanvas-slide" uk-icon="icon: menu" uk-toggle></a>
+        .nav-link:hover {
+            text-decoration: none;
+            color: #0056b3;
+        }
 
-						<div id="offcanvas-slide" uk-offcanvas="mode: push">
-						    <div class="uk-offcanvas-bar">
+    </style>
 
-						        <ul class="uk-nav uk-nav-default">
-						            <li class="uk-nav-header"><a href="#1" uk-scroll><b>Video 1: high agreeableness
-									</b></a></li>
-						            <li class="uk-nav-header"><a href="#2" uk-scroll><b>Video 2: middle agreeableness
-									</b></a></li>
-									<li class="uk-nav-header"><a href="#3" uk-scroll><b>Video 3: low agreeableness
-									</b></a></li>
-						      
-						        </ul>
 
-						    </div>
-						</div>
-		    </div>
+</head>
 
-		       
+<body oncontextmenu=self.event.returnValue=false>
 
-		    
-		</nav>
+<nav class="uk-navbar-container uk-margin" uk-navbar uk-sticky>
+    <div class="uk-navbar-left">
+        <a href="#offcanvas-slide" uk-icon="icon: menu" uk-toggle></a>
+
+        <div id="offcanvas-slide" uk-offcanvas="mode: push">
+            <div class="uk-offcanvas-bar">
+
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-nav-header"><a href="#1" uk-scroll><b>Video 1: high agreeableness
+                    </b></a></li>
+                    <li class="uk-nav-header"><a href="#2" uk-scroll><b>Video 2: middle agreeableness
+                    </b></a></li>
+                    <li class="uk-nav-header"><a href="#3" uk-scroll><b>Video 3: low agreeableness
+                    </b></a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+</nav>
 
 
 <div class="banner" style="background-color:#f5f5f5;padding-bottom:26px">
-	<div class="uk-container uk-container-center container">
-		<style>.large-title {font-size: 26px;}
-		</style>
+    <div class="uk-container uk-container-center container">
+        <style>.large-title {
+            font-size: 26px;
+        }
+        </style>
 
-		<div class="large-title">
-			 Inverted-U Sales Effect of Agreeableness: <br> Modelling Attractiveness Using MMML
+        <div class="large-title" style="font-size: 41px">
+            Inverted-U Sales Effect of Agreeableness: <br> Modelling Attractiveness Using MMML
 
-			</div>
- 
-
-
-</div>
-
-		<div class="uk-container uk-container-center container" id="content">
-			<style>.large-title {font-size: 26px;}
-		</style>
-			<div class="large-title">
-				
-				Multimedia Appendices
-
-			
-			</div>
- 
-			<div class="uk-grid-small" uk-grid>
-				<div class="uk-width-1-1">
-				<div class="content">
-				<style>
-				    h3 {
-				        font-weight: bold;
-					    margin-top: 20px; /* 这里添加了顶部边距 */
-				    }
-					.title {
-						margin-top: 120px;
-					}
-				</style>
-					
-				<h3 id="5">  
-				</h3>
-				<div class="uk-grid-small" uk-grid>
-					<div class="uk-width-1-1" uk-lightbox="animation: slide">
-					<div style="max-width: 800px;margin:auto">
-						<a href="#" data-caption=""><img src=" " alt=""></a>
-					</div>
-					
-				</div>
-				</div>	
-				 
-				<style>
-				    h3 {
-				        font-weight: bold;
-				    }
-				</style>
-				<h3 id="1" class="title">Video 1: high agreeableness
-				</h3>
-				<div class="video">
-					<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112912878338863&bvid=BV1wnYKe8EjP&cid=500001639855837&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
-			
-				</div>
-				</div>
- 
-				<h3 id="5">  
-				</h3>
-				<div class="uk-grid-small" uk-grid>
-					<div class="uk-width-1-1" uk-lightbox="animation: slide">
-					<div style="max-width: 800px;margin:auto">
-						<a href="#" data-caption=""><img src=" " alt=""></a>
-					</div>
-					
-				</div>
-				</div>	
-				 
-		 
-				<h3 id="2" class="title">Video 2: middle agreeableness
-
-				</h3>
-				<div class="video">
-					<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112912878276560&bvid=BV16nYKebEUu&cid=500001639857432&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
-			
-				</div>
-				</div>
- 
-				<h3 id="2">  
-				</h3>
-				<div class="uk-grid-small" uk-grid>
-					<div class="uk-width-1-1" uk-lightbox="animation: slide">
-					<div style="max-width: 800px;margin:auto">
-						<a href="#" data-caption=""><img src=" " alt=""></a>
-					</div>
-					
-				</div>
-				</div>	
-				 
-
-				<h3 id="3" class="title">Video 3: low agreeableness
-
-				</h3>
-				<div class="video">
-					<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112912878276452&bvid=BV16nYKebEQL&cid=500001639856634&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
-				</div>
-				</div>
- 
-				<h3 id="4">  
-				</h3>
-				<div class="uk-grid-small" uk-grid>
-					<div class="uk-width-1-1" uk-lightbox="animation: slide">
-					<div style="max-width: 800px;margin:auto">
-						<a href="#" data-caption=""><img src=" " alt=""></a>
-					</div>
-					
-				</div>
-				</div>	
-				<h3 id="4" class="title">Video 4: low agreeableness
-
-				</h3>
-				<div class="video">
-					<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112912878276452&bvid=BV16nYKebEQL&cid=500001639856634&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
-				</div>
-				</div>
+        </div>
 
 
-		
+    </div>
+
+    <div class="uk-container uk-container-center container" id="content">
+        <style>.large-title {
+            font-size: 26px;
+        }
+        </style>
+        <div class="large-title" style="font-size: 36px">
+
+            Multimedia Appendices
 
 
- 
+        </div>
+
+        <div class="uk-grid-small" uk-grid>
+            <div class="uk-width-1-1">
+                <div class="content">
+                    <style>
+                        h3 {
+                            font-weight: bold;
+                            margin-top: 20px; /* 这里添加了顶部边距 */
+                        }
+
+                        .title {
+                            margin-top: 120px;
+                        }
+                    </style>
+
+<!--                    <h3 id="5">-->
+<!--                    </h3>-->
+<!--                    <div class="uk-grid-small" uk-grid>-->
+<!--                        <div class="uk-width-1-1" uk-lightbox="animation: slide">-->
+<!--                            <div style="max-width: 800px;margin:auto">-->
+<!--                                <a href="#" data-caption=""><img src=" " alt=""></a>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <style>-->
+<!--                        h3 {-->
+<!--                            font-weight: bold;-->
+<!--                        }-->
+<!--                    </style>-->
+                    <h3 id="1" class="title">Video 1: high agreeableness
+                    </h3>
+                    <div class="video">
+                        <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112912878338863&bvid=BV1wnYKe8EjP&cid=500001639855837&p=1&autoplay=0"
+                                scrolling="no" border="0" frameborder="no" framespacing="0"
+                                allowfullscreen="true"></iframe>
 
 
-<a href="" uk-totop class="totop" uk-scroll><span uk-icon="top"></span></a>
-	</body>
+                    </div>
+                </div>
+
+<!--                <h3 id="5">-->
+<!--                </h3>-->
+<!--                <div class="uk-grid-small" uk-grid>-->
+<!--                    <div class="uk-width-1-1" uk-lightbox="animation: slide">-->
+<!--                        <div style="max-width: 800px;margin:auto">-->
+<!--                            <a href="#" data-caption=""><img src=" " alt=""></a>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                </div>-->
+
+
+                <h3 id="2" class="title">Video 2: middle agreeableness
+
+                </h3>
+                <div class="video">
+                    <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112912878276560&bvid=BV16nYKebEUu&cid=500001639857432&p=1&autoplay=0"
+                            scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+
+                </div>
+
+                <h3 id="3" class="title">Video 3: low agreeableness
+
+                </h3>
+                <div class="video">
+                    <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112912878276452&bvid=BV16nYKebEQL&cid=500001639856634&p=1&autoplay=0"
+                            scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+                </div>
+            </div>
+
+<!--            <h3 id="2">-->
+<!--            </h3>-->
+<!--            <div class="uk-grid-small" uk-grid>-->
+<!--                <div class="uk-width-1-1" uk-lightbox="animation: slide">-->
+<!--                    <div style="max-width: 800px;margin:auto">-->
+<!--                        <a href="#" data-caption=""><img src=" " alt=""></a>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+
+
+
+        </div>
+
+
+        <a href="" uk-totop class="totop" uk-scroll><span uk-icon="top"></span></a>
+</body>
 </html>
